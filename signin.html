@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/signin.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>SignIn</title>
+</head>
+<body">
+    
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand display-1 hvr-grow-shadow" href="index.html"><i class="fa-regular fa-hand-back-fist"></i><span>S</span>ahem</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainnav" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="mainnav">
+          <ul class="navbar-nav ms-auto">
+            <li><a class="nav-link hvr-icon-pulse-shrink hvr-box-shadow-outset active" href="index.html">
+              <i class="fa fa-home hvr-icon"></i>
+              Home
+            </a></li>
+            <li><a class="nav-link hvr-box-shadow-outset" href="#">Features</a></li>
+            <li><a class="nav-link hvr-box-shadow-outset" href="#">About</a></li>
+            <li><a class="nav-link hvr-box-shadow-outset" href="table.html">Tables</a></li>
+            <li><a class="nav-link hvr-box-shadow-outset" href="signin.html">SignIn</a></li> 
+            <li><a class="nav-link hvr-box-shadow-outset" href="#">Signup</a></li> 
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- start form -->
+    <div class="container mt-5 d-flex justify-content-center">
+        <div class="myform">
+            <form action="" class="was-validated">
+                <div class="form-floating mb-3 mt-3">
+                    <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                    <label for="uname" class="form-label">Username:</label>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                    <label for="pwd" class="form-label">Password:</label>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <button type="submit" class="btn btn-lg btn-secondary mt-5 d-block m-auto">Sign in</button>
+            </form>
+        </div>
+    </div>
+<!-- end form -->
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

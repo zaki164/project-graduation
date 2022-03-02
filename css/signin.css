@@ -1,0 +1,75 @@
+:root {
+    --main-color: #366D9F;
+    --second-color: #cd7672;
+    --third-color: #e0ecde;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 60px;
+    background-image: linear-gradient(to left, #FFA17F 30%, #00223E);
+}
+/* start navbar */
+nav {
+    background-image: linear-gradient(to left, #FFA17F 30%, #00223E);
+    -webkit-box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+    -moz-box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+    -o-box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+    box-shadow: 0 0 10px rgb(0 0 0 / 70%) !important;
+}
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .navbar-toggler {
+    color: var(--main-color);
+}
+.navbar .nav-link {
+    font-size: 18px;
+    margin: 0 10px 0; 
+    font-weight: 500;
+}
+.nav-link.active,
+.nav-link:hover {
+    color: var(--third-color);
+}
+.navbar .navbar-brand {
+    font-size: 27px;
+}
+.navbar-brand i {
+    margin-right: 3px;
+}
+.navbar-brand i,
+.navbar-brand span {
+    color: var(--second-color);
+}
+/* end navbar */
+/* start myform */
+.myform {
+    width: 40%;
+    height: 75vh;
+    margin-top: 10px;
+    padding: 100px 50px;
+    background-color: var(--third-color);
+    border-radius: 10px;
+}
+@media (max-width: 991px) {
+    .myform {
+        width: 70%;
+        padding-top: 80px;
+    }
+}
+.myform input {
+    caret-color: var(--main-color);
+}
+.myform .btn-secondary {
+    color: var(--second-color);
+    border-color: var(--main-color);
+    background-color: #00223E;
+}
+.myform .btn-secondary:hover {
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+/* end myform */
